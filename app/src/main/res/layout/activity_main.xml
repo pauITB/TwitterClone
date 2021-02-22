@@ -8,7 +8,21 @@
 
 
 <!--    Navigation Drawer-->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/navigation_drawer_menu"
+            app:headerLayout="@layout/header_navigation_drawer">
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 
     <include layout="@layout/twitter_content"/>
 
